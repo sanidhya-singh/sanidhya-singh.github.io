@@ -1,181 +1,532 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Sanidhya Singh</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-    <title>Sanidhya Singh</title>
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
 
-    <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
 
 </head>
 
+<body>
 
-<!--
-https://image.ibb.co/g27b8Q/bitstrips.jpg
-https://image.ibb.co/fPJ52k/downloads_bg.jpg
-https://image.ibb.co/h5Ouv5/intro_bg.jpg
-https://image.ibb.co/hzCXhk/me.jpg
+   <!-- Header
+   ================================================== -->
+   <header id="home">
 
--->
+      <nav id="nav-wrap">
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="chevron up icon icon"></i>  <span class="light">Top</span>
-                </a>
-                <div class='nav navbar-nav'>
-                  <li>
-                    <a href='https://github.com/sanidhya-singh/' target='_blank' ><i class='github icon'></i></a>
-                  </li>
-                </div>
-            </div>
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
+         </ul> <!-- end #nav -->
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#download">Projects</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+      </nav> <!-- end #nav-wrap -->
 
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body" style='background: url("https://image.ibb.co/h5Ouv5/intro_bg.jpg"); background-position: center; background-size: cover'>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 style='text-transform: capitalize;'>"When something is important enough, you do it even if the odds are not in your favor"</h1>
-                        <p class="intro-text"><span class='light'>Elon Musk, CEO at Tesla</span></p>
-                        <a href="#about" class="btn btn-default btn-lg" style='color: white'>
-                            <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">I'm Sanidhya Singh.</h1>
+            <h3>I'm a Hyderabad based <span>data analyst</span>, <span>developer</span> and <span>football junkie</span> currently working at Dell Technologies. Let's <a class="smoothscroll" href="#about">start scrolling</a>
+            and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
+            <hr />
+            <ul class="social">
+               <li><a href="https://www.facebook.com/sanidhya7singh" target="_blank"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="https://twitter.com/SanidhyaSingh7" target="_blank"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/sanidhya-singh-b546316b/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.instagram.com/sanidhya7/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="https://github.com/sanidhya-singh" target="_blank"><i class="fa fa-github"></i></a></li>
+            </ul>
+         </div>
+      </div>
 
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center" >
-        <div class="row" >
-            <div class="col-lg-8 col-lg-offset-2">
-              <img src="https://b.zmtcdn.com/data/user_profile_pictures/6f6/ab63d90ef039083830ceab50383006f6.jpg?fit=around%7C400%3A400&crop=400%3A400%3B%2A%2C%2A" class="img-responsive img-circle col-lg-offset-3" style="vertical-align: middle" alt="Cinque Terre">
-<br>
-                <h2>About Sanidhya</h2>
-                <p style='text-align: left;'>Sanidhya holds a Bachelor's in Technology, majoring in Computer Science from Shiv Nadar University.<br><br> He loves to read about new technologies, explore new trends and ideas.<br>An avid supporter of Manchester United F.C., he loves to watch action movies and  listening to music.<br></p>
-                <p style='text-align: left;'>Sanidhya currently works at Dell Technologies, based out of Hyderabad India.
-            </div>
-        </div>
-    </section>
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
 
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section" style='background: url("https://image.ibb.co/fPJ52k/downloads_bg.jpg"); background-position: center; background-size: cover'>
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Projects</h2>
-                  <p style='text-align: left;'>
-                      Please visit my GitHub page to explore repostiories I have shared. Hope they can be of use to you, feel free to use them.
-                      Below I have shared video previews of some of the code I have pushed to GitHub.
-                    </p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9ZFhT3LNqo0" frameborder="0" allowfullscreen></iframe>
-                      <p></p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3qqjfJ4KCf4" frameborder="0" allowfullscreen></iframe>
-                      <p></p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FGKWVZfT8Gw" frameborder="0" allowfullscreen></iframe>
-                      <p></p>
-                      <a href="https://github.com/sanidhya-singh/" target="_blank" class="ui inverted red icon big labeled button"><i class='github icon'></i>View on Github</a>
-                </div>
-            </div>
-        </div>
-    </section>
+   </header> <!-- Header End -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center" >
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2" >
-                <h2>Contact Sanidhya</h2>
-                <p style='text-align: left;'>Feel free to contact me on any of the following services. Suggestions for new projects/collaborations are welcome.</p>
-                <p><a href="mailto:sanidhya235@gmail.com">sanidhya235@gmail.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://www.facebook.com/sanidhya7singh" class="ui inverted labeled icon teal large button" target='_blank'><i class="facebook icon"></i> <span class="network-name">Facebook</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/sanidhya-singh/" class="ui inverted labeled icon teal large button" target='_blank'><i class="github icon"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/SanidhyaSingh7" class="ui inverted labeled icon teal large button" target='_blank'><i class="twitter icon"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                      <a href='https://www.linkedin.com/profile/view?id=249395248&trk=nav_responsive_tab_profile_pic' target='_blank' class='ui inverted labeled icon teal large button'><i class='linkedin icon'></i> <span class='network-name'>LinkedIn</span></a>
-                    </li>
-                </ul>
-                  </div>
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="profile-pic"  src="https://b.zmtcdn.com/data/user_profile_pictures/6f6/ab63d90ef039083830ceab50383006f6.jpg?fit=around%7C400%3A400&crop=400%3A400%3B%2A%2C%2A" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>About Me</h2>
+
+            <p>Sanidhya holds a Bachelor's in Technology, majoring in Computer Science from Shiv Nadar University.
+
+He loves to read about new technologies, explore new trends and ideas.
+An avid supporter of Manchester United F.C., he loves to watch action movies and listening to music.
+
+            </p>
+
+            <div class="row">
+
+               <div class="columns contact-details">
+
+                  <h2>Contact Details</h2>
+                  <p class="address">
+						   <span>Sanidhya Singh</span><br>
+						   <span>Devi Homes<br>
+						         Chanda Naik Nagar, Madhapur, Hyderabad, Telangana
+                     </span><br>
+						   <span>+91-9958015595</span><br>
+                     <span><a href="mailto:sanidhya235@gmail.com">sanidhya235@gmail.com</a></span>
+					   </p>
+
+               </div>
+
+               <div class="columns download">
+                  <p>
+                     <a href="http://s000.tinyupload.com/download.php?file_id=04324926303544039588&t=0432492630354403958892331" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                  </p>
+               </div>
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Education
+      ----------------------------------------------- -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Shiv Nadar University</h3>
+                  <p class="info">B.Tech in Computer Science and Engineering<span>&bull;</span> <em class="date">June 2016</em></p>
+
+                  <p>
+                  Sanidhya has completed his Bachelor's in Technology from Shiv Nadar University, Dadri. Undergone
+                  a rigorous 4 year curriculum designed along the same lines as Ivy League colleges, stressing more
+                  on practical knowledge rather than rote learning.
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <!--<div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>School of Cool Designers</h3>
+                  <p class="info">B.A. Degree in Graphic Design <span>&bull;</span> <em class="date">March 2003</em></p>
+
+                  <p>
+                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
+                  ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
+                  </p>
+
+               </div>
+
+            </div> --><!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Education -->
+
+
+      <!-- Work
+      ----------------------------------------------- -->
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span>Work</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Dell</h3>
+                  <p class="info">Software Dev Analyst<span>&bull;</span> <em class="date">July 2016 - Present</em></p>
+
+                  <p>
+                  Sanidhya currently works with Dell Technologies, based out of Hyderabad in their Enterprise Business
+                  Intelligence and Analytics division. He is currently playing the role of a Software Development Analyst.
                   <br>
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.09368372023!2d78.36674481398397!3d17.45522958803797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93c5fed42d91%3A0x6be5c446535ff09e!2sVasavi+Shantiniketan!5e0!3m2!1sen!2sin!4v1500825005038" width="900" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  Whilst at Dell, he has participated in several Dell Hackathons, recently securing a Top 3 Finish in the
+                  Dell Internet of Things Hackathon.
+                  </p>
 
-        </div>
-    </section>
+               </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class='ui horizontal divider'></div>
-        <div class='ui horizontal divider'></div>
-        <div class='ui section divider'></div>
-        <div class="container text-center" style='font-size: 10px'>
-            <p>Sanidhya Pratap Singh, 2017.</p>
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h3>Risk Management Solutions</h3>
+                  <p class="info">Summer Intern<span>&bull;</span> <em class="date">May 2015 - July 2015</em></p>
+
+                  <p>
+                  Sanidhya completed his summer 2015 internship at RMS, where he worked with the Model and Data Products division to develop a social, reactive web application to facilitate sharing of Risk Data, used internally by RMS.
+                  </p>
+<iframe width="390" height="390" src="https://www.youtube.com/embed/95nA7iN38Y0" frameborder="0" allowfullscreen></iframe>
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+
+      <!-- Skills
+      ----------------------------------------------- -->
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1><span>Skills</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <p>
+              Sanidhya has experience with data profiling and analysis, alongwith good exposure to web technologies.
+              He is also familiar with Data Warehousing and BI/reportin
+            </p>
+            <p>
+              <ul style='columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;'>
+                <li class='info'>Teradata</li>
+                <li class='info'>Informatica PowerCenter</li>
+                <li class='info'>Oracle</li>
+                <li class='info'>Control-M</li>
+                <li class='info'>Unix</li>
+                <li class='info'>JavaScript</li>
+                <li class='info'>MeteorJS</li>
+                <li class='info'>Java</li>
+                <li class='info'>PHP</li>
+                <li class='info'>SQL</li>
+                <li class='info'>MongoDB</li>
+                <li class='info'>C/C++</li>
+                <li class='info'>Google Maps, Facebook and Twitter API</li>
+              </ul>
+            </p>
+
+				<!--<div class="bars">
+
+				   <ul class="skills">
+					   <li><em>Photoshop</em></li>
+                  <li><em>Illustrator</em></li>
+						<li><span class="bar-expand wordpress"></span><em>Wordpress</em></li>
+						<li><span class="bar-expand css"></span><em>CSS</em></li>
+						<li><span class="bar-expand html5"></span><em>HTML5</em></li>
+                  <li><span class="bar-expand jquery"></span><em>jQuery</em></li>
+					</ul>
+
+				</div><!-- end skill-bars -->
+
+			</div> <!-- main-col end -->
+
+      </div> <!-- End skills -->
+
+   </section> <!-- Resume Section End-->
+
+
+   <!-- Portfolio Section
+   ================================================== -->
+
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="fifteen columns collapsed">
+
+            <h1>Check Out Some of My Works</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+              <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-01" title="">
+                        <img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Turk-knights-tour.svg/2000px-Turk-knights-tour.svg.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                         <h5>Knight's Tour</h5>
+                              <p>Java</p>
+                      </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+             </div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-02" title="">
+                        <img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Binary_tree.svg/1200px-Binary_tree.svg.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                         <h5>Binary Tree</h5>
+                              <p>Java</p>
+                      </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+             </div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-03" title="">
+                        <img alt="" src="http://d3ps0ofyzqe9vj.cloudfront.net/images/courses/big/0431701-413Snake-game-using-java.png">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+                         <h5>Snake Game</h5>
+                              <p>Java</p>
+                      </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+             </div> <!-- item end -->
+
+
+
+
+
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+         <!-- Modal Popup
+       --------------------------------------------------------------- -->
+
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+
+
+         <div class="description-box">
+             <iframe width="470" height="315" src="https://www.youtube.com/embed/9ZFhT3LNqo0" frameborder="0" allowfullscreen></iframe>
+           <h4>Knight's Tour</h4>
+           <p>Knight's Tour algorithm implemented in Java, visually showing the solution on a chess board.</p>
+
+         </div>
+
+            <div class="link-box">
+               <a href="https://github.com/sanidhya-singh/Knight-s-Tour-Java" target="_blank">Code</a>
+            <a class="popup-modal-dismiss">Close</a>
             </div>
-    </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+       </div><!-- modal-01 End -->
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+         <div id="modal-02" class="popup-modal mfp-hide">
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
 
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
+         <div class="description-box">
+           <iframe width="470" height="315" src="https://www.youtube.com/embed/FGKWVZfT8Gw" frameborder="0" allowfullscreen></iframe>
+           <h4>Binary Tree</h4>
+           <p>Binary Tree implemented in Java with Graphics. Do traversal, search, print image, leaf, non-leaf nodes.</p>
+
+         </div>
+
+            <div class="link-box">
+               <a href="https://github.com/sanidhya-singh/Binary-Search-Tree-using-Java-Graphics" target="_blank">Code</a>
+            <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+       </div><!-- modal-02 End -->
+
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+         <!--<img class="scale-with-grid" src="images/portfolio/modals/m-judah.jpg"FGKWVZfT8Gw 3qqjfJ4KCf4 alt="" />-->
+
+         <div class="description-box">
+           <iframe width="470" height="315" src="https://www.youtube.com/embed/3qqjfJ4KCf4" frameborder="0" allowfullscreen></iframe>
+
+           <h4>Snake Game</h4>
+           <p>Classic Snake games using Java Graphics
+
+</p>
+
+         </div>
+
+            <div class="link-box">
+               <a href="https://github.com/sanidhya-singh/Snake-Java-Graphics" target="_blank">Code</a>
+            <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+       </div><!-- modal-03 End -->
+
+
+
+      </div> <!-- row End -->
+
+   </section> <!-- Portfolio Section End-->
+
+
+
+   <!-- Call-To-Action Section
+   ================================================== -->
+
+
+   <!-- Testimonials Section
+   ================================================== -->
+   <section id="testimonials">
+
+      <div class="text-container">
+
+         <div class="row">
+
+            <div class="two columns header-col">
+
+               <h1><span>Client Testimonials</span></h1>
+
+            </div>
+
+            <div class="ten columns flex-container">
+
+               <div class="flexslider">
+
+                  <ul class="slides">
+
+                     <li>
+                        <blockquote>
+                           <p>When something is important enough, you do it even if the odds are not in your favor
+                           </p>
+                           <cite>Elon Musk</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                     <li>
+                        <blockquote>
+                           <p>Imagination will often carry us to worlds that never were. But without it we go nowhere.
+                           </p>
+                           <cite>Carl Sagan</cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                  </ul>
+
+               </div> <!-- div.flexslider ends -->
+
+            </div> <!-- div.flex-container ends -->
+
+         </div> <!-- row ends -->
+
+       </div>  <!-- text-container ends -->
+
+   </section> <!-- Testimonials Section End-->
+
+
+
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+              <li><a href="https://www.facebook.com/sanidhya7singh" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/SanidhyaSingh7" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/sanidhya-singh-b546316b/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://www.instagram.com/sanidhya7/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="https://github.com/sanidhya-singh" target="_blank"><i class="fa fa-github"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>Sanidhya Singh, 2017</li>
+
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
 
 </body>
+
+</html>
