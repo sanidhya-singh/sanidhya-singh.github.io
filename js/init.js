@@ -7,8 +7,58 @@
  jQuery(document).ready(function($) {
 
 /*----------------------------------------------------*/
-/* FitText Settings
+/* Theme (see js/theme.js — auto follows OS until user toggles)
 ------------------------------------------------------ */
+
+   function syncThemeToggle() {
+      var PT = window.PortfolioTheme;
+      if (!PT) return;
+      var t = document.documentElement.getAttribute('data-theme') || 'light';
+      var btn = document.getElementById('theme-toggle');
+      if (!btn) return;
+      var isDark = t === 'dark';
+      btn.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+      btn.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+      var mode = PT.getMode();
+      btn.setAttribute(
+         'title',
+         mode === 'auto'
+            ? 'Theme: matching system (Shift+click locks a choice)'
+            : 'Theme: saved choice (Shift+click to match system again)'
+      );
+   }
+
+   if (window.PortfolioTheme) {
+      window.PortfolioTheme.apply();
+   }
+   syncThemeToggle();
+
+   var colorSchemeMq = window.matchMedia('(prefers-color-scheme: dark)');
+   function onSystemThemeChange() {
+      if (!window.PortfolioTheme || window.PortfolioTheme.getMode() !== 'auto') {
+         return;
+      }
+      window.PortfolioTheme.apply();
+      syncThemeToggle();
+   }
+   if (colorSchemeMq.addEventListener) {
+      colorSchemeMq.addEventListener('change', onSystemThemeChange);
+   } else if (colorSchemeMq.addListener) {
+      colorSchemeMq.addListener(onSystemThemeChange);
+   }
+
+   $('#theme-toggle').on('click', function (e) {
+      if (!window.PortfolioTheme) return;
+      if (e.shiftKey) {
+         e.preventDefault();
+         window.PortfolioTheme.setMode('auto');
+         syncThemeToggle();
+         return;
+      }
+      var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      window.PortfolioTheme.setMode(next);
+      syncThemeToggle();
+   });
 
 /*----------------------------------------------------*/
 /* Smooth Scrolling
