@@ -7,8 +7,30 @@
  jQuery(document).ready(function($) {
 
 /*----------------------------------------------------*/
-/* FitText Settings
+/* Theme toggle (light / dark)
 ------------------------------------------------------ */
+
+   function syncThemeToggle() {
+      var root = document.documentElement;
+      var t = root.getAttribute('data-theme') || 'light';
+      var btn = document.getElementById('theme-toggle');
+      if (!btn) return;
+      var isDark = t === 'dark';
+      btn.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+      btn.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+   }
+
+   syncThemeToggle();
+
+   $('#theme-toggle').on('click', function() {
+      var root = document.documentElement;
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try {
+         localStorage.setItem('theme', next);
+      } catch (e) {}
+      syncThemeToggle();
+   });
 
 /*----------------------------------------------------*/
 /* Smooth Scrolling
